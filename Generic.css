@@ -1,0 +1,50 @@
+/* NavigationBAr  CSS*/
+.TopWordsFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navigationBar {
+    overflow: hidden;
+    background-color: #002417;
+}
+  
+.navigationBar a {
+    float: left;
+    color: #FFF;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigationBar .icon {
+    display: none;
+}
+
+.topLineNav {
+    display: inline-block;
+    position: relative;
+    color:  #FFF;
+}
+  
+.topLineNav::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    top: 1cm;
+    bottom: 0;
+    left: 0;
+    background-color:  #FFF;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.topLineNav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
