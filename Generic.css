@@ -1,9 +1,12 @@
 /* DOM Css */
 button{
-    width: 110px;
+    width: 150px;
     height: 40px;
     background-color: #97978D;
     color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
 .buttonCss{
@@ -12,8 +15,10 @@ button{
 }
 
 button:hover{
-    background-color: black;
     color: #FFF;
+    background-color: #b9b9b2;
+    box-shadow: 0 0 5px #b9b9b2, 0 0 15px #b9b9b2, 0 0 75px #b9b9b2
+    
 }
 
 /* NavigationBAr  CSS*/
