@@ -2,11 +2,13 @@
 button{
     width: 150px;
     height: 40px;
-    background-color: #97978D;
-    color: #FFF;
+    background-color: #9CCAF0;
+    color: #0063DB;
     text-align: center;
     cursor: pointer;
     border-radius: 50px;
+    font-family: 'VT323', monospace;
+
 }
 
 .buttonCss{
@@ -15,9 +17,9 @@ button{
 }
 
 button:hover{
-    color: #FFF;
-    background-color: #b9b9b2;
-    box-shadow: 0 0 5px #b9b9b2, 0 0 15px #b9b9b2, 0 0 75px #b9b9b2
+    color: #0063DB;
+    background-color: #45a6f5;
+    box-shadow: 0 0 5px #45a6f5, 0 0 15px #45a6f5, 0 0 75px #45a6f5
     
 }
 
@@ -31,13 +33,13 @@ button:hover{
 
 .navigationBar {
     overflow: hidden;
-    background-color: #97978D;
+    background-color: #9CCAF0;
 }
   
 .navigationBar a {
     float: left;
-    color: #FFF;
-    font-family: 'PT Sans Narrow', sans-serif;
+    color: #0063DB;
+    font-family: 'VT323', monospace;
     padding: 14px 18px;
     text-decoration: none;
     font-size: 17px;
@@ -50,7 +52,8 @@ button:hover{
 .topLineNav {
     display: inline-block;
     position: relative;
-    color:  #FFF;
+    color:  #0063DB;
+    font-family: 'VT323', monospace;
 }
   
 .topLineNav::after{
@@ -62,7 +65,7 @@ button:hover{
     top: 1cm;
     bottom: 0;
     left: 0;
-    background-color:  #FFF;
+    background-color:  #0063DB;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
@@ -160,6 +163,11 @@ button:hover{
     width: 200px;
 }
 
+.gamefont{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+
 @media screen and (max-width: 1000px) {
     .RowContainer{
         flex-direction: column;
@@ -173,3 +181,5 @@ button:hover{
     }
 
 }
+
+
