@@ -28,6 +28,12 @@
     height: 130px;
 }
 
+.rectangleContainer
+{
+    width: 231px;
+    height: 200px;
+}
+
 .BigQuizContainer
 {
     display: flex;
