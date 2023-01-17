@@ -8,6 +8,7 @@ button{
     cursor: pointer;
     border-radius: 50px;
     font-family: 'VT323', monospace;
+    font-size: medium;
 
 }
 
@@ -20,7 +21,6 @@ button:hover{
     color: #0063DB;
     background-color: #45a6f5;
     box-shadow: 0 0 5px #45a6f5, 0 0 15px #45a6f5, 0 0 75px #45a6f5
-    
 }
 
 /* NavigationBAr  CSS*/
