@@ -2,6 +2,7 @@
 
 PROJECT NAME:
 Assignment_2:
+This website is a gaming website. The website contains quizzes, and games such as guessing the location based of a random generated image. There is also TicTacToe where x's and o's are to be placed in a grid. There are also many zodiac, food and kpop quizzes for users to play. There is also a store where users can purchase the gaming website's games and merchandise.
 
 DESIGN PROCESS:
 
