@@ -105,4 +105,14 @@ button:hover{
     }
 }
 
+.bkgrd{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: auto;
+    height:auto;
+    background-size: cover; 
+    
+}
+
 

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Rowdies', cursive;
+    color: lightcyan
 }
 
 .TitleHR
@@ -50,10 +51,13 @@
 {
     display: flex;
     align-items: center;
+    background-color: white;
     padding-left: 20px;
     width: 400px;
     font-family: 'Fjalla One', sans-serif;
     color: black;
+    
+
 }
 
 .QuizHeader
@@ -70,6 +74,7 @@
     .RowContainer{
         flex-direction: column;
         align-items: center;
+        
     }
 
     .SmallQuizContainer{
@@ -91,7 +96,7 @@
     display: flex;
     justify-content: center;
     font-family: 'VT323', monospace;
-    color: #0063DB; 
+    color: lightcyan; 
 }
 
 .ProLocationExplain
@@ -104,6 +109,7 @@
 {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .boxinABox
