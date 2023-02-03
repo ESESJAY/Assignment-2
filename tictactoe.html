@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Images/Logo.png" >
-    <link rel="stylesheet" type="text/css" href="normalise.css">
-    <link rel="stylesheet" type="text/css" href="Generic.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rowdies&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
- 
-    <title>PROAME</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/Logo.png" >
+  <link rel="stylesheet" type="text/css" href="normalise.css">
+  <link rel="stylesheet" type="text/css" href="Generic.css">
+  <link rel="stylesheet" type="text/css" href="tictactoe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rowdies&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>Tic Tac Toe</title>
+
 </head>
-<body>
+<body background="Videos/tictactoe-background.gif" style="background-repeat: no-repeat;
+background-attachment: fixed;
+width: auto;
+height:auto;
+background-size: cover; ">
     <header class="navigationBar" id="MYnavigationBar" >
         <div class = "TopWordsFlex">
             <a href="index.html"><img alt="PROAME" src="Images/Logo.png" style="height: 73.028px;width: 165px;"></a>
@@ -31,3 +35,83 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
     </header>
+  <h1 style="text-align: center;">Tic Tac Toe</h1>
+  <br><br>
+  <table id="board">
+    <tr>
+      <td id="0"></td>
+      <td id="1"></td>
+      <td id="2"></td>
+    </tr>
+    <tr>
+      <td id="3"></td>
+      <td id="4"></td>
+      <td id="5"></td>
+    </tr>
+    <tr>
+      <td id="6"></td>
+      <td id="7"></td>
+      <td id="8"></td>
+    </tr>
+  </table>
+  <br><br>
+  <script>
+    var checkwins = ''
+    var checker = 0
+    var turn = "X";
+    var board = document.getElementById("board").getElementsByTagName("td");
+    for (var i = 0; i < board.length; i++) {
+      board[i].addEventListener("click", function() {
+        if (this.innerHTML == "") {
+          this.innerHTML = turn;
+          checker += 1;
+          checkWin();
+          if (turn == "X") {
+            turn = "O";
+          } else {
+            turn = "X";
+          }
+        }
+        if (checker == 9)
+        {
+          checkWin();
+          if (checkwins != 'Win')
+            {
+              alert("Draw!!");
+              reset();
+            }
+
+        }
+      });
+    }
+    function checkWin() {
+      var winCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+      for (var i = 0; i < winCombinations.length; i++) {
+        if (board[winCombinations[i][0]].innerHTML == turn && board[winCombinations[i][1]].innerHTML == turn && board[winCombinations[i][2]].innerHTML == turn) {
+          checkwins = 'Win';
+          if (checkwins == 'Win')
+          {
+            alert(turn + " wins!");
+            reset();
+          }
+          
+        }
+        
+
+      }
+    }
+    function reset() {
+      for (var i = 0; i < board.length; i++) {
+        board[i].innerHTML = "";
+        checkwins = '';
+        checker = 0
+      }
+    }
+    
+      
+
+      
+    
+  </script>
+</body>
+</html>
