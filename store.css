@@ -6,11 +6,18 @@
     padding: 0 4px;
   }
   
+  h2
+  {
+    font-family: 'VT323', monospace;
+    color: #02223d;
+  }
+
+ 
 
   
   /* Add some shadows to create a card effect */
   .card {
-    background-color: rgba(183, 165, 165, 0.841);
+    background-color: rgba(122, 156, 196, 0.841);
     
     box-shadow: 0 4px 8px 0#9CCAF0
     
@@ -29,7 +36,8 @@
   }
   
   .title {
-    color: black;
+    font-family: 'VT323', monospace;
+    color: #02223d;
   }
   
   .button {
