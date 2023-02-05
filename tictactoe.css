@@ -13,3 +13,22 @@ table {
   h1 {
     font-family: 'VT323', monospace;
   }
+
+  @media screen and (max-width:1000px)
+  {
+    table {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    td {
+      width: 125px;
+      height: 125px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 80px;
+      border: 3px solid black;
+    }
+    h1 {
+      font-family: 'VT323', monospace;
+    }
+  } 
