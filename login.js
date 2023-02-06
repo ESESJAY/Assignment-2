@@ -10,23 +10,36 @@ signInButton.addEventListener('click', () => {
 });
 
 $(document).ready(function(){
-	$("button").click(function(){
-	  $.ajax({
-		type: 'POST',
-		url: "https://assignment2-2816.restdb.io/rest/contact",
-		headers: {
-		  'Content-Type': 'application/json',
-		  'x-apikey': '63e1075d3bc6b255ed0c46fe'
-		},
-		data: JSON.stringify({
-		  name: $("input[name='name']").val(),
-		  email: $("input[name='email']").val(),
-		  password: $("input[name='password']").val()
-		}),
-		success: function(data) {
-		  console.log(data);
+	const APIKEY = "63e1075d3bc6b255ed0c46fe";
+	$("#Button-SignUp").click(function(){
+		let signUpName = $("#nameSignUp").val();
+		let signUpEmail = $("#emailSignUp").val();
+		let signUpPassword = $("#passwordSignUp").val();
+
+		let jsondata = {
+			"name": signUpName,
+			"email": signUpEmail,
+			"password": signUpPassword,
+		};
+		console.log(jsondata)
+
+		let settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": "https://assignment2-2816.restdb.io/rest/contact",
+			"method": "POST", 
+			"headers": {
+				"content-type": "application/json",
+				"x-apikey": APIKEY,
+				"cache-control": "no-cache"
+			},
+		"processData": false,
+		"data": JSON.stringify(jsondata),
 		}
-	  });
+
+		$.ajax(settings).done(function (response) {
+			console.log(response);
+		});
 	});
   });
 
@@ -46,7 +59,7 @@ $(document).ready(function(){
 
 
   $(document).ready(function() {
-	$("button").click(function() {
+	$("ButtonSignIn").click(function() {
 	var email = $("input[name='email']").val();
 	var password = $("input[name='password']").val();
   $.ajax(settings).done(function (response) {
