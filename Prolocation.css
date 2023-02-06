@@ -1,0 +1,123 @@
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px;
+    }
+
+    p
+    {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.993);
+    }
+
+    #result
+    {
+    font-size: 30px;
+    }
+    
+    #score
+    {
+    font-size: 30px;
+    }
+
+    #countryImage {
+    width: 800px;
+    height: 550px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    }
+    
+    #userGuess {
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    #submitBtn {
+    width: 350px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    #result {
+    margin-top: 20px;
+    font-size: 20px;
+    }
+    
+    #score {
+    color: #4CAF50;
+    }
+
+    @media screen and (max-width:1000px)
+    {
+    p
+    {
+    font-size: 15px;
+    }
+    
+    #result
+    {
+    font-size: 15px;
+    }
+        
+    #score
+    {
+    font-size: 15px;
+    }
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            padding: 118px;
+            
+            }
+            
+            #countryImage {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 20px;
+            
+            }
+            
+            #userGuess {
+            width: 300px;
+            height: 40px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            }
+            
+            #submitBtn {
+            width: 300px;
+            height: 40px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+            
+            #result {
+            margin-top: 20px;
+            font-size: 20px;
+            }
+            
+            #score {
+            color: #4CAF50;
+            }
+    }

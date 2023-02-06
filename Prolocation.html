@@ -7,7 +7,7 @@
     <link rel="icon" href="Images/Logo.png" >
     <link rel="stylesheet" type="text/css" href="normalise.css">
     <link rel="stylesheet" type="text/css" href="Generic.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="Prolocation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,11 @@
  
     <title>PROAME</title>
 </head>
-<body>
+<body background="Videos/Prolocation.webp" style="background-repeat: no-repeat;
+background-attachment: fixed;
+width: auto;
+height:auto;
+background-size: cover; ">
     <header class="navigationBar" id="MYnavigationBar" >
         <div class = "TopWordsFlex">
             <a href="index.html"><img alt="PROAME" src="Images/Logo.png" style="height: 73.028px;width: 165px;"></a>
@@ -30,7 +34,22 @@
             <a class="topLineNav" href="store.html">STORE</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
+    </header>
+    <div id="gameContainer" background="Videos/store-background.gif" style="background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: auto;
+    height:auto;
+    background-size: cover; ">
+        <img id="countryImage">
+        <p >Guess the country:</p>
+        <input type="text" id="userGuess">
+        <button id="submitBtn">Submit</button>
+        <p id="result">Score: <span id="score">0</span></p>
+      </div>
+      <script src="Prolocation.js"></script>
         <script src="Jav.js"></script>
+</body>
+        
     </header>
     
 
