@@ -9,7 +9,6 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
-
 $(document).ready(function(){
 	$("button").click(function(){
 	  $.ajax({
@@ -38,23 +37,24 @@ $(document).ready(function(){
 	"url": "https://assignment2-2816.restdb.io/rest/contact",
 	"method": "GET",
 	"headers": {
-	"content-type": "application/json",
-	"x-apikey": "63e1075d3bc6b255ed0c46fe",
-	"cache-control": "no-cache"
+	  "content-type": "application/json",
+	  "x-apikey": "63e1075d3bc6b255ed0c46fe",
+	  "cache-control": "no-cache"
 	}
   }
 
 
-	var found = false;
-    $(document).ready(function() {
+
+  $(document).ready(function() {
 	$("button").click(function() {
 	var email = $("input[name='email']").val();
 	var password = $("input[name='password']").val();
-  	$.ajax(settings).done(function (response) {
-		for (var i = 0; i < response.length; i++) {
-		if (JSON.stringify(response[i].email) == JSON.stringify(email) && JSON.stringify(response[i].password)== JSON.stringify(password)){
-			found = true;
-			break;
+  $.ajax(settings).done(function (response) {
+	var found = false;
+	for (var i = 0; i < response.length; i++) {
+	  if (JSON.stringify(response[i].email) == JSON.stringify(email) && JSON.stringify(response[i].password)== JSON.stringify(password)) {
+		found = true;
+		break;
 	  }
 	}
 	if (found) {
@@ -65,11 +65,4 @@ $(document).ready(function(){
 	}
   });
   });
-  }); 
-
-
-
-
-
-
-
+  });
