@@ -9,60 +9,35 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
+
 $(document).ready(function(){
 	$("button").click(function(){
-	  $.ajax({
-		type: 'POST',
-		url: "https://assignment2-2816.restdb.io/rest/contact",
-		headers: {
-		  'Content-Type': 'application/json',
-		  'x-apikey': '63e1075d3bc6b255ed0c46fe'
+	  var name = $("input[name='name']").val();
+	  var email = $("input[name='email']").val();
+	  var password = $("input[name='password']").val();
+	  
+	  var data = {
+		"name": name,
+		"email": email,
+		"password": password
+	  };
+	  
+	  var settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://assignment2-a9b2.restdb.io/rest/contact",
+		"method": "POST",
+		"headers": {
+		  "content-type": "application/json",
+		  "x-apikey": "63e1cd3d3bc6b255ed0c473d",
+		  "cache-control": "no-cache"
 		},
-		data: JSON.stringify({
-		  name: $("input[name='name']").val(),
-		  email: $("input[name='email']").val(),
-		  password: $("input[name='password']").val()
-		}),
-		success: function(data) {
-		  console.log(data);
-		}
+		"processData": false,
+		"data": JSON.stringify(data)
+	  }
+	  
+	  $.ajax(settings).done(function (response) {
+		alert("Data has been posted to the database");
 	  });
 	});
-  });
-
-  
-  var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://assignment2-2816.restdb.io/rest/contact",
-	"method": "GET",
-	"headers": {
-	  "content-type": "application/json",
-	  "x-apikey": "63e1075d3bc6b255ed0c46fe",
-	  "cache-control": "no-cache"
-	}
-  }
-
-
-
-  $(document).ready(function() {
-	$("button").click(function() {
-	var email = $("input[name='email']").val();
-	var password = $("input[name='password']").val();
-  $.ajax(settings).done(function (response) {
-	var found = false;
-	for (var i = 0; i < response.length; i++) {
-	  if (JSON.stringify(response[i].email) == JSON.stringify(email) && JSON.stringify(response[i].password)== JSON.stringify(password)) {
-		found = true;
-		break;
-	  }
-	}
-	if (found) {
-	  alert("Welcome back!");
-	  window.location.href = "index.html";
-	} else {
-	  alert("Wrong username or password!");
-	}
-  });
-  });
   });
