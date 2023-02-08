@@ -33,7 +33,7 @@ background-size: cover; ">
           <a class="topLineNav" href="Prolocation.html">PROLOCATION</a>
           <a class="topLineNav" href="tictactoe.html">TIC-TAC-TOE</a>
           <a class="topLineNav" href="store.html">STORE</a>
-          <a class="topLineNav" href="login.html">LOGIN</a>
+          <a class="topLineNav" id="navlogin" href="login.html">LOGIN</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         </div>
     </header>
@@ -56,60 +56,7 @@ background-size: cover; ">
       <td id="8"></td>
     </tr>
   </table>
-  <br><br>
   <script src="Jav.js"></script>
-  <script>
-    var checkwins = ''
-    var checker = 0
-    var turn = "X";
-    var board = document.getElementById("board").getElementsByTagName("td");
-    for (var i = 0; i < board.length; i++) {
-      board[i].addEventListener("click", function() {
-        if (this.innerHTML == "") {
-          this.innerHTML = turn;
-          checker += 1;
-          checkWin();
-          if (turn == "X") {
-            turn = "O";
-          } else {
-            turn = "X";
-          }
-        }
-        if (checker == 9)
-        {
-          checkWin();
-          if (checkwins != 'Win')
-            {
-              alert("Draw!!");
-              reset();
-            }
-
-        }
-      });
-    }
-    function checkWin() {
-      var winCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
-      for (var i = 0; i < winCombinations.length; i++) {
-        if (board[winCombinations[i][0]].innerHTML == turn && board[winCombinations[i][1]].innerHTML == turn && board[winCombinations[i][2]].innerHTML == turn) {
-          checkwins = 'Win';
-          if (checkwins == 'Win')
-          {
-            alert(turn + " wins!");
-            reset();
-          }
-          
-        }
-      }
-    }
-    function reset() {
-      for (var i = 0; i < board.length; i++) {
-        board[i].innerHTML = "";
-        checkwins = '';
-        checker = 0
-      }
-    }
-
-  </script>
-  <script src="Jav.js"></script>
+  <script src="tictactoe.js"></script>
 </body>
 </html>

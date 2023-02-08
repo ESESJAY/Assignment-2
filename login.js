@@ -9,104 +9,65 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
-<<<<<<< HEAD
+    // Handle sign up form submit
+    $("#Button-SignUp").click(function(event) {
+      event.preventDefault();
+      let name = $("#nameSignUp").val();
+      let email = $("#emailSignUp").val();
+      let password = $("#passwordSignUp").val();
 
-$(document).ready(function(){
-	$("button").click(function(){
-	  var name = $("input[name='name']").val();
-	  var email = $("input[name='email']").val();
-	  var password = $("input[name='password']").val();
-	  
-	  var data = {
-		"name": name,
-		"email": email,
-		"password": password
-	  };
-	  
-	  var settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://assignment2-a9b2.restdb.io/rest/contact",
-		"method": "POST",
-		"headers": {
-		  "content-type": "application/json",
-		  "x-apikey": "63e1cd3d3bc6b255ed0c473d",
-		  "cache-control": "no-cache"
-		},
-		"processData": false,
-		"data": JSON.stringify(data)
-	  }
-	  
-	  $.ajax(settings).done(function (response) {
-		alert("Data has been posted to the database");
-	  });
-	});
-  });
-=======
-$(document).ready(function() {
-	const APIKEY = "63e1500c3bc6b255ed0c471e";
-	$("#Button-SignUp").on("click", function () {
+      // Make API call to sign up user
+      $.ajax({
+        type: "POST",
+        url: "https://assignment2-a9b2.restdb.io/rest/contact",
+        headers: {
+          "Content-Type": "application/json",
+          "x-apikey": "63e1cd3d3bc6b255ed0c473d"
+        },
+        data: JSON.stringify({
+          name: name,
+          email: email,
+          password: password
+        }),
+        success: function(response) {
+          alert("User signed up successfully!");
+        },
+        error: function(error) {
+          console.log(error);
+        }
+      });
+    });
 
-	  let name = $("#nameSignUp").val();
-	  let email = $("#emailSignUp").val();
-	  let password = $("#passwordSignUp").val();
+    // Handle sign in form submit
+    $("#ButtonSignIn").click(function(event) {
+      event.preventDefault();
+      let email = $("#emailSignIn").val();
+      let password = $("#passwordSignIn").val();
 
-	  let jsondata = {"name": name,"email": email,"password": password};
-	  var settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://assignment2-2816.restdb.io/rest/contact",
-		"method": "POST",
-		"headers": {
-		  "content-type": "application/json",
-		  "x-apikey": APIKEY,
-		  "cache-control": "no-cache"
-		},
-		"processData": false,
-		"data": JSON.stringify(jsondata)
-	  }
-	  
-	  console.log(settings.data)
-	  $.ajax(settings).done(function (response) {
-		console.log(response);
-	  });
-	});
-});
-
-  
-//   var settings = {
-// 	"async": true,
-// 	"crossDomain": true,
-// 	"url": "https://assignment2-2816.restdb.io/rest/contact",
-// 	"method": "GET",
-// 	"headers": {
-// 	  "content-type": "application/json",
-// 	  "x-apikey": "63e1500c3bc6b255ed0c471e",
-// 	  "cache-control": "no-cache"
-// 	}
-//   }
-
-
-
-//   $(document).ready(function() {
-// 	$("ButtonSignIn").click(function() {
-// 	var email = $("input[name='email']").val();
-// 	var password = $("input[name='password']").val();
-//   $.ajax(settings).done(function (response) {
-// 	var found = false;
-// 	for (var i = 0; i < response.length; i++) {
-// 	  if (JSON.stringify(response[i].email) == JSON.stringify(email) && JSON.stringify(response[i].password)== JSON.stringify(password)) {
-// 		found = true;
-// 		break;
-// 	  }
-// 	}
-// 	if (found) {
-// 	  alert("Welcome back!");
-// 	  window.location.href = "index.html";
-// 	} else {
-// 	  alert("Wrong username or password!");
-// 	}
-//   });
-//   });
-//   });
->>>>>>> 58ccabac0d7e93d5bd252ce6cb0e6f052e8b2dd6
+      // Make API call to sign in user
+      $.ajax({
+        type: "GET",
+        url:
+          "https://assignment2-a9b2.restdb.io/rest/contact",
+        headers: {
+          "Content-Type": "application/json",
+          "x-apikey": "63e1cd3d3bc6b255ed0c473d"
+        },
+        success: function(data) {
+          let user = data.find(
+            user => user.email == email && user.password == password
+          );
+          if (user) {
+            alert("Welcome back!!! " + user.name);
+			window.location.href = "index.html";
+			$("#navlogin").hide();
+          } else {
+            alert("Invalid email or password");
+          }
+        },
+        error: function(error) {
+          console.log(error);
+        }
+      });
+    });
+ 
