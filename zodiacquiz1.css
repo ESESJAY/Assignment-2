@@ -1,0 +1,70 @@
+.zodiacQuizTittle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rowdies', cursive;
+    color: black;
+}
+
+.zodiacPic{
+    width: 600px;
+}
+
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rowdies', cursive;
+}
+
+
+.BigquizCotainer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.InsideContainer{
+    width: 600px;
+    height: 600px;
+}
+
+.TitleQuizBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    height: 150px;
+    background-color: rgb(15, 101, 239);
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+}
+
+.RowContainbox{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.splitting{
+    width: 50px;
+    height: 90px;
+}
+
+.QuizSmallBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 225px;
+    height: 125px;
+    background-color: gainsboro;
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    
+    cursor: pointer;
+}
+
+.QuizSmallBox:hover{
+    zoom: 110%;
+}
