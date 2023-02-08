@@ -24,7 +24,7 @@
 
 .InsideContainer{
     width: 600px;
-    height: 600px;
+    height: 550px;
 }
 
 .TitleQuizBox{
@@ -44,6 +44,8 @@
     padding-top: 50px;
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
 }
 
 .splitting{
@@ -66,5 +68,16 @@
 }
 
 .QuizSmallBox:hover{
+    background-color: gainsboro;
     zoom: 110%;
+}
+
+@media screen and (max-width: 800px) {
+    .InsideContainer{
+        width: 350px;
+    }
+
+    .TitleQuizBox{
+        width: 350px;
+    }
 }
