@@ -13,7 +13,7 @@ $(document).ready(function(){
         if(localStorage.getItem(Checking) != null)
         {
             var 
-            $("#CartCol").append('<div class="containerRow"> <strong class="ProductCol">Product Infomation</strong> <strong class="PriceCol">Price</strong> <strong class="QuantityCol">Quantity</strong></div>')
+            ("#CartCol").append('<div class="containerRow"> <strong class="ProductCol">Product Infomation</strong> <strong class="PriceCol">Price</strong> <strong class="QuantityCol">Quantity</strong></div>')
         }
     }
 })
