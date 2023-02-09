@@ -217,13 +217,62 @@
 
 
 /* Cart Css */
+.CartTitle{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .containerBig{
     display: flex;
     justify-content: center;
+    
+    color: white;
 }
 
 .boxInBox{
-  width: 500px;
-  height: 500px;
-  background-color: #02223d;
+  width: 800px;
+  height: 400px;
+}
+
+.containerCol{
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+
+.containerRow{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.ProductCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 400px;
+  height: 25px;
+  background-color: #3a5871;
+}
+
+.PriceCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  background-color: #3a5871;
+}
+
+.QuantityCol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  background-color: #3a5871;
 }
