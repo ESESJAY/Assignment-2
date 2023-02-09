@@ -1,0 +1,109 @@
+.zodiacQuizTittle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rowdies', cursive;
+    color: black;
+}
+
+.zodiacPic{
+    width: 600px;
+}
+
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rowdies', cursive;
+}
+
+
+.BigquizCotainer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.InsideContainer{
+    width: 600px;
+    height: 550px;
+}
+
+.TitleQuizBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    height: 150px;
+    background-color: rgb(15, 101, 239);
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+}
+
+.RowContainbox{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.splitting{
+    width: 50px;
+    height: 90px;
+}
+
+.QuizSmallBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 225px;
+    height: 125px;
+    background-color: gainsboro;
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    
+    cursor: pointer;
+}
+
+.QuizSmallBox:hover{
+    background-color: gainsboro;
+    zoom: 110%;
+}
+
+.answerImg{
+    width: 600px;
+    height: 400px;
+}
+
+@media screen and (max-width: 700px) {
+    .InsideContainer{
+        width: 350px;
+    }
+
+    .TitleQuizBox{
+        width: 350px;
+    }
+
+    .zodiacPic{
+        width: 350px;
+    }
+
+    .QuizSmallBox{
+        font-size: large;
+    }
+
+    .zodiacQuizTittle{
+        font-size: x-small;
+    }
+
+    .TitleQuizBox{
+        font-size: medium;
+    }
+
+    .answerImg{
+        width: 350px;
+        height: 200px;
+    }
+}
