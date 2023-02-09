@@ -59,7 +59,7 @@ signInButton.addEventListener('click', () => {
           );
           if (user) {
             alert("Welcome back!!! " + user.name);
-			window.location.href = "/html_logout/index1.html";
+			window.location.href = "index1.html";
           } else {
             alert("Invalid email or password");
           }
