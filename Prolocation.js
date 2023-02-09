@@ -33,11 +33,23 @@ const countryArray = [
   if (userGuess === countryName) {
   score += 100;
   result.innerHTML = "Correct!!!" + "  Score: " + score;
+  winchecker();
   } else {
-    result.innerHTML = "Wrong!" + "   Score: " + score;;
+    result.innerHTML = "Wrong!" + "   Score: " + score;
+    winchecker();
+
   }
   randomCountry = countryArray[Math.floor(Math.random() * countryArray.length)];
   countryName = randomCountry.name;
   countryImage = randomCountry.image;
   document.getElementById("countryImage").src = countryImage;
   });
+
+  function winchecker()
+  {
+  if (score == 1500)
+  {
+    alert("You have reached 1500 points!! You have won the game!! Click on okay button to restart!")
+    window.location.href = "Prolocation.html";
+  }
+}

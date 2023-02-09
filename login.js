@@ -59,8 +59,7 @@ signInButton.addEventListener('click', () => {
           );
           if (user) {
             alert("Welcome back!!! " + user.name);
-			window.location.href = "index.html";
-			$("#navlogin").hide();
+			window.location.href = "index1.html";
           } else {
             alert("Invalid email or password");
           }
@@ -70,4 +69,6 @@ signInButton.addEventListener('click', () => {
         }
       });
     });
+
+    
  
