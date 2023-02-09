@@ -1,6 +1,7 @@
 .cssFlexBox{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .imgLocations{
@@ -204,12 +205,15 @@
     }
 
     .containers {
-        display: flex;
-        justify-content: center;
-        }
+      display: flex;
+      justify-content: center;
+    }
         
-        .leagues {
-        height: 200px;
-        width: auto;
-        }
+    .leagues {
+      height: 200px;
+      width: auto;
+    }
 }
+
+
+/* Cart Css */

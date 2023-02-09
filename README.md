@@ -12,31 +12,29 @@ And if you're looking for a one-stop-shop which have our apparels available.So w
 
 As a user type we would want to use this website as an entertainment. There are quizzes available for kpop fans, zodiac believer and food lovers so as one of them i would like to try out the quiz and find out more about myself through the quiz. There is also games like prolocation which is for users who are a geography experts or fanatics. If i was a geography experts or fanatics i will defintely play this game to test my geography skills. There is also Tictactoe for Tictactoe lovers to play. Finally as a user who love games, these users will be able to purchase game make by this website in the store.
 
-Framework link for Home webpage and mobile:https://xd.adobe.com/view/d22c30cc-4dad-4e27-b5d4-6cac216f0716-877f/
+Framework link for Home webpage and mobile:https://xd.adobe.com/view/c8ef69a9-1f6c-44d4-86f3-bcc3f6dc705b-9dbc/
 
-Framework link for Prolocation webpage and mobile:https://xd.adobe.com/view/80c95d59-8471-40c0-a52f-9c40f85a75d1-d59a/
+Framework link for Prolocation webpage and mobile:https://xd.adobe.com/view/b8a7ff47-289c-4634-be3b-9bd522391b5d-edf4/
 
-Framework link for Quiz 1, 2, and 3 webpage and mobile:https://xd.adobe.com/view/9ac4d1ff-693e-4903-8cbe-9cc4c56b6948-cf97/
+Framework link for Quiz 1, 2, 3 and 4 webpage and mobile:https://xd.adobe.com/view/60438ae1-80c3-4910-82df-7332bb67f137-3510/
 
-Framework link for Store webpage and mobile:https://xd.adobe.com/view/48c35962-1f90-4f3f-ba1d-cd1556aeae49-1d90/
+Framework link for Store webpage and mobile:https://xd.adobe.com/view/70a871d2-6c3f-42aa-a07f-9fc19bc7b6c4-25fb/
 
-Framework link for Tictactoe webpage and mobile:https://xd.adobe.com/view/c191d866-c76e-4c9c-9246-785515cd2b0e-94c2/
+Framework link for Tictactoe webpage and mobile:https://xd.adobe.com/view/eb82effa-8ba4-4e49-9efc-2165dd38d718-bed1/
 
 Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a8-132912104d2e-a057/
 
-FEATURES:
+## FEATURES:
 
-1. In those more button that i have created for each webpage it allows the user to visit other website that contains more relevant details.
-2. In my cart page the cross button removes the column when the user clicks on it.
-3. In my cart page the minus button decreases the quantity by one whenever the user clicks but it will not be clickable when the quantity is at one.
-4. In my cart page the plus button increases the quantity by one whenever the user clicks.
-5. In my Shop page the add to cart button allow the users to add the item to the cart webpage, and the cart quantity on the most right side of the navigation bar will increase by 1 quantity.
+1. We have a sign up page for new users to register for an account.
+2. After registering for one account, you can try to log in and if the information matches the database you will be brought to the home page as a logged in user. Users can logout anytime they want.
+3. In the Tictactoe webpage, there is Tictactoe for 2 users to play.
+4. In the prolocation website, there is a country guesser game where a picture is randomly generated and user can type into the input box to guess the country.
+5. In the quiz webpage, for every quiz there are 5 questions for the users. Each question contains 4 boxes for user to choose 1. After completing the 5 questions the quiz will decide the answer based on the question chose by the user.
 
-TESTING:
+## TESTING:
 
 1. Shop Webpage
-   i. You can go add items into the cart and for every click the quantity increases at the most right hand side of the navigation bar.
-   ii. When you resize the shop webpage the four by four format will change to a two by eight format.
 
 2. Cart Webpage
    i.When the quantity of the product is at one, when you try to click on the minus button it will not decrease the value.
