@@ -338,25 +338,25 @@ $(document).ready(function(){
             if(number == 0)
             {
                 $("#titleOfAnswer").html("Your Zodiac Signs: Aries/Leo/sagittarius");
-                document.getElementById('imgZodiac').src = '/Images/firesign.png'
+                document.getElementById('imgZodiac').src = 'Images/firesign.png'
 
             }
             else if(number == 1)
             {
                 $("#titleOfAnswer").html("Your Zodiac Signs: Cancer/Scorpio/Pisces");
-                document.getElementById('imgZodiac').src = '/Images/watersign.png'
+                document.getElementById('imgZodiac').src = 'Images/watersign.png'
 
             }
             else if(number == 2)
             {
                 $("#titleOfAnswer").html("Your Zodiac Signs: Gemini/Libra/Aquarius.");
-                document.getElementById('imgZodiac').src = '/Images/airsign.png'
+                document.getElementById('imgZodiac').src = 'Images/airsign.png'
 
             }
             else if(number == 3)
             {
                 $("#titleOfAnswer").html("Your Zodiac Signs: Capricorn/Taurus/Virgo.");
-                document.getElementById('imgZodiac').src = '/Images/earthsign.png'
+                document.getElementById('imgZodiac').src = 'Images/earthsign.png'
 
             }
 
