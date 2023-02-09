@@ -1,11 +1,11 @@
-.zodiacQuizTittle{
+.KpopQuizTittle{
     display: flex;
     justify-content: center;
     font-family: 'Rowdies', cursive;
     color: black;
 }
 
-.zodiacPic{
+.KpopPic{
     width: 600px;
 }
 
@@ -34,8 +34,8 @@
 
     width: 600px;
     height: 150px;
-    background-color: rgb(15, 101, 239);
-    color: white;
+    background-color: pink;
+    color: black;
     font-family: 'Anton', sans-serif;
     font-size: x-large;
 }
@@ -58,9 +58,10 @@
     align-items: center;
     justify-content: center;
 
+    color: white;
     width: 225px;
     height: 125px;
-    background-color: gainsboro;
+    background-color: black;
     font-family: 'Anton', sans-serif;
     font-size: x-large;
     
@@ -68,7 +69,8 @@
 }
 
 .QuizSmallBox:hover{
-    background-color: gainsboro;
+    background-color: pink;
+    color: black;
     zoom: 110%;
 }
 
@@ -100,10 +102,5 @@
 
     .TitleQuizBox{
         font-size: medium;
-    }
-
-    .answerImg{
-        width: 350px;
-        height: 200px;
     }
 }
