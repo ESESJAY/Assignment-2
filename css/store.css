@@ -217,3 +217,13 @@
 
 
 /* Cart Css */
+.containerBig{
+    display: flex;
+    justify-content: center;
+}
+
+.boxInBox{
+  width: 500px;
+  height: 500px;
+  background-color: #02223d;
+}

@@ -34,7 +34,7 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 
 ## TESTING:
 
-1. Shop Webpage
+1. Quiz Webpage
 
 2. Cart Webpage
    i.When the quantity of the product is at one, when you try to click on the minus button it will not decrease the value.
@@ -70,4 +70,4 @@ MEDIA: 1.https://www.yoasobi-music.jp/img/common/logo_yoasobi.svg 2.https://cdna
 
 ACKNOWLEDGEMENTS:
 I have received inspiration for this project from buzzfeed website, geo-guesser website.
-The link to the buzzfeed website, geo-guesser website
+The link to the buzzfeed website, geo-guesser website.
