@@ -1,4 +1,9 @@
-# Assignment-2
+# Assignment-2 Soo Shan Jing & Koh Sheng Yao
+
+## Member Allocation
+
+Koh Sheng Yao: Home webpage, quiz webpages, cart webpage, store webpage
+Soo Shan Jing: Prolocation webpage, Tictactoe webpage, login webpage , store webpage
 
 ## Proame Game And Store Website:
 
