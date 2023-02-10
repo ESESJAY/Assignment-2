@@ -97,8 +97,9 @@
     </div>
 
     <hr class="cartHR">
+
     <div class="containerBig">
-        <div class="boxInBox">
+        <div class="boxInBox1">
             <div class="containerCol" id="CartCol">
                 <div class="containerRow">
                     <strong class="ProductCol"><a href="cart.html"><button id="clearCart">Clear Cart</button></strong></a>
@@ -109,8 +110,75 @@
         </div>
     </div>
 
-    
+    <div class="CheckOutFunctions">Checkout</div>
+    <hr class="cartHR">
+    <div class="containerBig">
+        <div class="checkoutContainer">
+            Name:<br>
+            <input id="CheckoutName" class="textWidth" type="text"><br>
+            <label class="valiColor" id="valiCheckoutName"></label><br>
+            ContactNo:<br>
+            <input id="checkoutContactNo" class="textWidth" type="text"><br>
+            <div class="valiColor" id="valicheckoutContactNo"></div><br>
+            Country:<br>
+            <select id="Country">
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Korea">Korea</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+            </select><br><br>
+            Postal Code:<br>
+            <input  id="postal" class="textWidth" type="text"><br>
+            <div class="valiColor" id="valipostal"></div><br>
+            Address:<br>
+            <input id="address" class="textWidth" type="text"><br>
+            <div class="valiColor" id="valiaddress"></div><br>
 
+            Delivery Options:<br>
+            <form id="Delivery">
+                <input type="radio" name="Delivery" value="Express Delivery">
+                <label>Express Delivery + $5(1-3days)</label><br>
+                <input type="radio" name="Delivery" value="Noraml Delivery">
+                <label for="L">Free Delivery (5-7days) </label><br>
+                <br>
+            </form>
+            <div class="valiColor" id="validel"></div><br>
+        </div>
+    </div>
+
+    <div class="CheckOutFunctions">Payment</div>
+    <hr class="cartHR">
+    <div class="containerBig">
+        <div class="checkoutContainer">
+            Credit Card:<br>
+            <form id="CreditCard">
+                <input type="radio" name="cc" value="Visa">
+                <label>Visa</label><br>
+                <input type="radio" name="cc" value="Masters">
+                <label>Masters</label><br>
+            </form>
+            <div class="valiColor" id="ValiCreditCard"></div><br>
+
+            Name:<br>
+            <input id="PaymentName" class="textWidth" type="text"><br>
+            <div class="valiColor" id="valiPaymentName"></div><br>
+
+            Card Number:<br>
+            <input id="PaymentCArd" class="textWidth" type="text"><br>
+            <div class="valiColor" id="valiPaymentCArd"></div><br>
+            
+            <form id="DeliveryAddress">
+                <input type="radio" name="Delivery" value="Express Delivery">
+                <label>Billing address same as Delivery Address</label>
+            </form>
+            <br>
+            <div class="containerBig">
+                <button id="checkoutButton">Checkout</button></a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Jav.js"></script>
     <script src="js/cart.js"></script>
