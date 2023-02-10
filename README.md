@@ -43,14 +43,14 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 
 ## TESTING:
 
-1. Quiz Webpage
+1. Prolocation webpage
+   i.For every correct country guessed it will say Correct!! and state the score.
+   ii. For every wrong country guessed it will say Wrong!! and state the score.
 
-2. Cart Webpage
-   i.When the quantity of the product is at one, when you try to click on the minus button it will not decrease the value.
-   ii. When you click on the cross button, the cart quantity at the top right hand corner and the total price will be updated.
-
-3. Home webpage
-   i. When you resize the webpage the upcoming events format of three row will change to a one row format.The button will be bigger in size.
+2. Tictactoe webpage
+   i.When 'X' wins the game, an alert will pop up and say that X has won. After pressing the Okay button, it resets the game.
+   ii. When 'O' wins the game, an alert will pop up and say that O has won. After pressing the Okay button, it resets the game.
+   iii. When 'O' and 'X' draws the game, an alert will pop up and say draw!!.After pressing the Okay button, it resets the game.
 
 ## CREDITS:
 
@@ -72,5 +72,5 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 
 ## ACKNOWLEDGEMENTS:
 
-I have received inspiration for this project from buzzfeed website, geo-guesser website.
+I have received inspiration for this project from buzzfeed website for my quizzes webpage, geo-guesser website for Prolocation webpage.
 The link to the buzzfeed website: https://www.buzzfeed.com/quizzes , geo-guesser website https://www.geoguessr.com/.
