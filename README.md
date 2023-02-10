@@ -63,8 +63,8 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 17:https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cmsfeatured/germany-tourist-attractions-1513251736-785X440.jpg
 18:https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg
 19:https://www.planetware.com/photos-large/I/italy-colosseum-day.jpg
-20:
-21:
+20:https://wallpaperaccess.com/full/8351171.gif
+21:https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif
 22:
 23:
 24:
