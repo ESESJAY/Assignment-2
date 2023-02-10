@@ -233,7 +233,7 @@
 
 .boxInBox{
   width: 800px;
-  height: 400px;
+  height: 350px;
 }
 
 .containerCol{
@@ -255,8 +255,9 @@
   align-items: center;
 
   width: 400px;
-  height: 25px;
-  background-color: #3a5871;
+  height: 35px;
+  background-color: white;
+  color: black;
 }
 
 .PriceCol{
@@ -265,7 +266,8 @@
   align-items: center;
 
   width: 200px;
-  background-color: #3a5871;
+  background-color: white;
+  color: black;
 }
 
 .QuantityCol{
@@ -274,5 +276,10 @@
   align-items: center;
 
   width: 200px;
-  background-color: #3a5871;
+  background-color: white;
+  color: black;
+}
+
+.cartHR{
+  width: 800px;
 }
