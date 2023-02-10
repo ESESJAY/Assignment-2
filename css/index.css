@@ -22,6 +22,49 @@
     }
 }
 
+.informationFlex{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    
+}
+
+.informationBox{
+    width: 1000px;
+    height: 350px;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informationRow{
+    display: flex;
+    flex-direction: row; 
+
+}
+
+.imgInfo{
+    padding-top: 80px;
+}
+.informationWords{
+    width: 600px;
+    
+}
+
+.informationColumn{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: black;
+
+    background-color: #9CCAF0;
+}
+
 /* Different Boxes for pics */
 .pictueContainer
 {
@@ -80,6 +123,26 @@
     .SmallQuizContainer{
         width: 300px;
         padding-top: 10px;
+    }
+
+    .informationFlex{
+        font-size: medium;
+        
+    }
+
+    .informationBox{
+        height: 500px;
+    }
+
+    .informationWords{
+        width: 300px;
+        
+    }
+
+    .informationRow
+    {
+        display: flex;
+        flex-direction: column;
     }
 
 }
