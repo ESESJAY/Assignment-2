@@ -5,6 +5,10 @@
 Koh Sheng Yao: Home webpage, quiz webpages, cart webpage, store webpage
 Soo Shan Jing: Prolocation webpage, Tictactoe webpage, login webpage , store webpage
 
+## GITHUB DEPLOYMENT
+
+https://esesjay.github.io/Assignment-2/
+
 ## Proame Game And Store Website:
 
 Introducing the ultimate gaming and shopping destination - the website that brings together all the fun and excitement of quizzes, geography, strategy and more! Our website features a wide range of games that will keep you entertained for hours. From the thrill of BuzzFeed-style quizzes that test your knowledge and challenge your intellect, to the excitement of Geoguesser-style games that put your geography skills to the test, we have it all.
@@ -77,10 +81,6 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 19:https://www.planetware.com/photos-large/I/italy-colosseum-day.jpg
 20:https://wallpaperaccess.com/full/8351171.gif
 21:https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif
-
-## GITHUB DEPLOYMENT
-
-https://esesjay.github.io/Assignment-2/
 
 ## ACKNOWLEDGEMENTS:
 
