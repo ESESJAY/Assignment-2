@@ -31,6 +31,7 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 3. In the Tictactoe webpage, there is Tictactoe for 2 users to play.
 4. In the prolocation website, there is a country guesser game where a picture is randomly generated and user can type into the input box to guess the country.
 5. In the quiz webpage, for every quiz there are 5 questions for the users. Each question contains 4 boxes for user to choose 1. After completing the 5 questions the quiz will decide the answer based on the question chose by the user.
+6. In the store webpage users can purchase merchandise.
 
 ## Technology used
 
@@ -52,6 +53,12 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
    ii. When 'O' wins the game, an alert will pop up and say that O has won. After pressing the Okay button, it resets the game.
    iii. When 'O' and 'X' draws the game, an alert will pop up and say draw!!.After pressing the Okay button, it resets the game.
 
+3. Store Webpage
+   i.When you click on the add to cart you can select the quantity beforehand, it is capped to 5 per add to cart. After clicking on add to cart an alert will be shown to the user which restates the details of the product the user has added to cart.
+
+4. Cart Webpage
+   i.After adding to cart, in the cart webpage it will display the item details. There is a checkout below which user can fill in their information and also their card details. After checking out, an alert will pop up informing the user on its successful purchase.
+
 ## CREDITS:
 
 ## MEDIA:
@@ -65,10 +72,10 @@ Framework link for Cart webpage:https://xd.adobe.com/view/f504760e-1b8b-4897-80a
 19:https://www.planetware.com/photos-large/I/italy-colosseum-day.jpg
 20:https://wallpaperaccess.com/full/8351171.gif
 21:https://i.pinimg.com/originals/bd/56/5d/bd565dcc0a556add0b0a0ed6b26d686e.gif
-22:
-23:
-24:
-25:
+
+## GITHUB DEPLOYMENT
+
+https://esesjay.github.io/Assignment-2/
 
 ## ACKNOWLEDGEMENTS:
 
